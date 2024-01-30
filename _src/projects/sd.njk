@@ -22,26 +22,54 @@ layout: baselayout.njk
             <p>
                 The concept for the basic workflow is that patients present at clinic. On any given day, there will be an outstanding todo list of patients
                 for a given clinician. This is based on clinical requests that have been resolved somehow, and require some kind of acknowledgement
-                or further decision from a clinician.
-            </p>
-        </div>
-        <div><img src="/assets/img/patientlist.png"/ alt="Spiritum Duo Patient List"></div>
-        <div><img src="/assets/img/patientdecisionpage.png" alt="Spiritum Duo Decision Page"/></div>
-        <div>
-            <p>
-                When a clinician reviews a patient, they are presented 
+                or further decision from a clinician. All examples
             </p>
         </div>
         <div>
-            <p>
-                Explain decision types
-            </p>
+            <figure>
+                <img src="/assets/img/patientlist.png"/ alt="Spiritum Duo Patient List">
+                <figcaption>Patient List</figcaption>
+            </figure>
         </div>
-        <div><img src="/assets/img/decisiontypes.png" alt="Spiritum Duo Decision Types"/></div>
-        <div><img src="/assets/img/grp.png" alt="Spiritum Duo Pathway Graphical Representation"/></div>
+        <div>
+            <figure>
+                <img src="/assets/img/patientdecisionpage.png" alt="Spiritum Duo Decision Page"/>
+                <figcaption>Decision Page</figcaption>
+            </figure>
+        </div>
         <div>
             <p>
-                Explain GRP
+                When a clinician reviews a patient, they are presented with the results of the most recent clinical requests, e.g. referral letter, or X-Ray result.
+                They must acknowledge they have seen the request, and then may make decisions or request further investigations.
+            </p>
+        </div>
+        <div>
+            <p>
+                The clinican may submit further clinical requests. These are then automatically dispatched and tracked by the backend application server. This represents a significant time saving over manually submitting requests.
+            </p>
+        </div>
+        <div>
+            <figure>
+                <img src="/assets/img/decisiontypes.png" alt="Spiritum Duo Decision Types"/>
+                <figcaption>Request Types</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="/assets/img/grp.png" alt="Spiritum Duo Pathway Graphical Representation"/>
+                <figcaption>Graphical Representation of Pathway</figcaption>
+            </figure>
+        </div>
+        <div>
+            <p>
+                I implemented a concept for a graphical representation of the clinical pathway. This was based on feedback from clinicians at the hospital who wanted a visualisation tool to enable them to see at a glance any
+                patients at risk of breaching the 62 day treatment time target. In the example image, dark blue indicates a request that requires acknowledgement, light blue indicates a request that is in progress, and red indicates
+                no action is being taken on a patient.
+            </p>
+            <p>
+                The feedback from clinical staff was that this visualisation would be useful in a real system for enabling them to identify patients who might otherwise be slipping through the cracks.
+                This could be due to patients having issues causing them to miss appointments, or delays in liasing with other specialities in complex cases. Obviously anything that reduces treatment time
+                improves outcomes, so this is highly desirable.
             </p>
         </div>
     </div>
