@@ -1,0 +1,43 @@
+---
+layout: baselayout.njk
+---
+<div class="project-page">
+    <div>
+        <h1>MaMuMi: Mapping the Music of Migration</h1>
+        <div>
+            Homepage: <a href="https://mamumi.eu/">https://mamumi.eu/</a> <br/>
+            App: <a href="https://app.mamumi.eu/">https://app.mamumi.eu/</a> <br/>
+            GitHub: <a href="https://github.com/nickives/MaMuMi">https://github.com/nickives/MaMuMi</a>
+        </div>
+    </div>
+    <div class="project-body">
+        <div>
+            <p>MaMuMi “Mapping the Music of Migration” is a two-year European, Erasmus+ musical inheritance project focused on talking about music and song as a tool for intercultural competency.  It involves the collection, editing and uploading of “Song Stories”, stories about music to an interactive app. I came on to this project along with 3 other students to develop the <a href="https://app.mamumi.eu/">Music Migration Map</a> app.</p>
+            <p>The app was developed entirely using JavaScript. It uses a <a href="https://nodejs.org/en">Node.js</a> / <a href="https://expressjs.com/">Express</a> and simple HTML and JS on the frontend. The map view uses the <a href="https://developers.google.com/maps">Google Maps API</a>. I took the lead on the overall system design, and also devised a solution that permitted the pin to animate across the map while staying syncronised with the playing song story.</p>
+        </div>
+        <div>
+            <figure>
+                <img src="/assets/img/mamumi-map.png"/>
+                <figcaption>Map view.</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="/assets/img/mamumi-story.png"/>
+                <figcaption>Song story in progress.</figcaption>
+            </figure>
+        </div>
+        <div>
+            <p>The purpose of the app is to play the collected song stories while showing the migrant's journey on a map. When a song story has finished playing, the line representing the journey persists on the map so that when all stories are played, the map will be criss-crossed with lines for all the migrant journeys.</p>
+        </div>
+        <div>
+            <p>A content management system was required so the song stories could be input by project leadership. As the site does not have to be regularly updated, a simple JSON file using <a href="https://github.com/typicode/lowdb">lowdb</a> was used for persistence. </p>
+        </div>
+        <div>
+            <figure>
+                <img src="/assets/img/mamumi-cms.png"/>
+                <figcaption>Content management system.</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>

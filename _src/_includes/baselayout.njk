@@ -1,0 +1,39 @@
+---
+title: Nick Ives, Junior Developer
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/global.css">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+        <!-- Logo -->
+        <a href="#" class="logo">NI</a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li class="{{ 'nav-selected' if homeSelected }}"><a href="/">Home</a></li>
+                <li class="{{ 'nav-selected' if projectsSelected }}"><a href="/projects">Projects</a></li>
+            </ul>
+        </nav>
+            {# <input id="nav-menu-button" type="checkbox" />
+            <label id="hamburger" for="nav-menu-button">Ham</label>
+            <nav>
+                <ul>
+                    <li class="{{ 'nav-selected' if homeSelected }}"><a href="/">Home</a></li>
+                    <li class="{{ 'nav-selected' if projectsSelected }}"><a href="/projects">Projects</a></li>
+                </ul>
+            </nav> #}
+        </header>
+        <section>
+        {{ content | safe }}
+        </section>
+    </body>
+</html>
